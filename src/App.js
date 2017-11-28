@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       secondsElapsed: 0,
       currentBadgeUrl: 'https://s3.amazonaws.com/badge-files-dev/badge-image/default',
-      BADGE_API_URL: 'http://52.4.240.117:8080',
+      BADGE_API_URL: 'https://ziclu0yj8h.execute-api.us-east-1.amazonaws.com/honda1',
       geolocation: geo,
 
     };
@@ -17,7 +17,7 @@ class App extends Component {
   sendLocation(context) {
     context.setState((prevState, props) => {
     context.state.geolocation.getCurrentPosition(function (err, position) {
-      fetch(`${context.state.BADGE_API_URL}/location`, {
+      fetch(`${context.state.BADGE_API_URL}/location-proxy`, {
         method: 'post',
         headers: {
           "Content-type": "application/json"
@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   imageFetchTick(context) {
-    return fetch(`${context.state.BADGE_API_URL}/dashboard`)
+    return fetch(`${context.state.BADGE_API_URL}/dashboard-proxy`)
       .then((response) => response.json())
       .then((responseJson) => {
         context.setState({
