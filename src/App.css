@@ -1,17 +1,7 @@
-.App {
+.badgeApp {
   text-align: center;
 }
 
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.badgeApp-badge {
+   width: 100%;
 }
