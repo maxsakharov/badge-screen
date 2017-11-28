@@ -17,7 +17,7 @@ Rhonda Intelligent Assistent uses a number of platforms/frameworks to work prope
 
 * **Unity** - 3D and animation modeling framework
 * **Vuforia** - Vuforia. Unity 3D extension for marker detection
-* **AEKit** - IOS AR framework
+* **ARKit** - IOS AR framework
 * **C#** - scripting of Unity scenarious
 * **ReactJS** - Rhonda Assistant and Badge Web Applications  
 * **Node.js** - Backend & API of the ecosystem
